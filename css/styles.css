@@ -1,0 +1,620 @@
+:root {
+   /* COLOR */
+
+   --prime-text-color: #757575;
+   --second-text-color: #212121;
+   --white-text-color: #ffffff;
+   --prime-bg-color: #ffffff;
+   --second-bg-color: #f5f4fa;
+   --hero-bg-color: #c4c4c4;
+   --dark-bg-color: #2f303a;
+   --accent-color: #2196f3;
+   --btn-active-color: #188ce8;
+   --logo-dark-color: #000000;
+   --footer-link-color: rgba(255, 255, 255, 0.6);
+   --footer-link-bg: rgba(255, 255, 255, 0.1);
+   --second-bg-color: #f5f5f5;
+   --svg-prime-color: #afb1b8;
+
+   /* --btn-bg-filter: #F5F4FA; */
+}
+
+body {
+   /* box-sizing: border-box; */
+
+   background-color: var(--prime-bg-color);
+   color: var(--prime-text-color);
+   font-family: 'Roboto', sans-serif;
+
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.7;
+   letter-spacing: 0.03em;
+}
+
+/* === COMMON === */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   margin: 0;
+   padding: 0;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+}
+
+img {
+   display: block;
+   max-width: 100%;
+}
+/* ----------- */
+.container {
+   width: 1200px;
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+
+   /* outline: 1px solid tomato; */
+}
+
+.section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
+
+.no-padding {
+   padding-top: 0;
+}
+
+.link {
+   text-decoration: none;
+}
+
+.list {
+   list-style: none;
+}
+
+.btn {
+   border-radius: 4px;
+   font-family: inherit;
+   cursor: pointer;
+   border: 1px solid transparent;
+}
+
+.title {
+   color: var(--second-text-color);
+}
+.section-title {
+   text-align: center;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.17;
+}
+
+.visually-hidden {
+   position: fixed;
+   transform: scale(0);
+}
+/* ------------------ */
+
+/* HEADER */
+
+.main-head {
+   border-bottom: 1px solid #ececec;
+}
+
+.hed-box {
+   display: flex;
+   align-items: center;
+}
+
+/* ==== Высота хедера ч-з padding для link ===== */
+.nav-list .link {
+   display: block;
+   padding-top: 32px;
+   padding-bottom: 32px;
+}
+
+/* ---logo--- */
+.logo {
+   font-family: 'Raleway';
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+
+   color: var(--accent-color);
+}
+
+.part-dark {
+   color: var(--logo-dark-color);
+}
+
+/* ---nav--- */
+.nav-list {
+   display: flex;
+   margin-left: 93px;
+}
+
+.nav-list .item:not(:first-child) {
+   margin-left: 50px;
+}
+
+.nav-link {
+   /* display: inline-block;
+   padding-top: 32px;
+   padding-bottom: 32px; */
+
+   font-weight: 500;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+
+   color: var(--second-text-color);
+}
+.nav-link.current {
+   color: var(--accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+   color: var(--accent-color);
+}
+
+/* ===== CONTACT ===== */
+.contaсt-list {
+   display: flex;
+   margin-left: auto;
+}
+
+.contaсt-list .item + .item {
+   margin-left: 50px;
+}
+
+.contaсt-list .link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   font-weight: 500;
+   line-height: 1.14;
+   letter-spacing: 0.02em;
+
+   color: inherit;
+
+   /* color: tomato; */
+}
+
+.contact-list-ico {
+   margin-right: 10px;
+
+   fill: currentColor;
+}
+
+.contaсt-list .link:hover,
+.contaсt-list .link:focus {
+   color: var(--accent-color);
+}
+/* ---------------   */
+
+/* MAIN */
+/* --hero-- */
+.hero {
+   max-width: 1600px;
+   max-height: 600px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-top: 200px;
+   padding-bottom: 200px;
+
+   /* background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+   ); */
+
+   background-image: linear-gradient(
+         to right,
+         rgba(255, 0, 0, 0.2),
+         rgba(0, 0, 255, 0.1)
+      ),
+      url(../images/hero-bg.jpg);
+
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+
+   text-align: center;
+   /* background-color: var(--hero-bg-color); */
+}
+.hero-title {
+   margin-bottom: 30px;
+   font-weight: 900;
+   font-size: 44px;
+   line-height: 1.36;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+
+   color: var(--white-text-color);
+}
+.hero-btn {
+   min-width: 216px;
+   padding: 10px 32px;
+
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 1.88;
+   letter-spacing: 0.06em;
+
+   color: var(--white-text-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+   background-color: var(--btn-active-color);
+}
+
+/* -==== FEATURE ===== */
+
+.feature-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin-left: -30px;
+}
+
+.feature-list .item {
+   flex-basis: calc(100% / 4 - 30px);
+   margin-left: 30px;
+}
+
+/* ----- BOX для SVG ----- */
+.feature-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   height: 120px;
+
+   background-color: var(--second-bg-color);
+}
+
+.feature-ico {
+   width: 70px;
+   height: 70px;
+}
+
+.feature-list .item:nth-child(1)::before {
+   background-image: url(../images/feature01.svg);
+}
+
+.feature-list .item:nth-child(2)::before {
+   background-image: url(../images/feature02.svg);
+}
+
+.feature-list .item:nth-child(3)::before {
+   background-image: url(../images/feature03.svg);
+}
+
+.feature-list .item:nth-child(4)::before {
+   background-image: url(../images/feature04.svg);
+}
+
+.feature-descr {
+   padding-top: 30px;
+}
+
+.feature-pretitle {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14;
+   text-transform: uppercase;
+}
+
+.feature-text {
+   margin-top: 10px;
+}
+/* --------- */
+
+/* --Work-- */
+
+.work-list {
+   display: flex;
+   margin-top: 50px;
+   justify-content: space-between;
+}
+
+/* -------- */
+
+/* --Team-- */
+.team {
+   background-color: var(--second-bg-color);
+}
+
+.team .container {
+   outline: none;
+}
+
+.team-list {
+   display: flex;
+   margin-top: 20px;
+   margin-left: -30px;
+}
+
+.team-list > .item {
+   margin-top: 30px;
+   margin-left: 30px;
+
+   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024,
+      0px 1px 3px 0px #0000001f;
+
+   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
+      0px 2px 1px rgb(0 0 0 / 20%);
+
+   /* box-shadow: 0px 1px 3px 0px #0000001f; */
+}
+
+.member-dscr {
+   padding: 30px 32px;
+   text-align: center;
+}
+
+.team-title {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.19;
+}
+.team-text {
+   margin-top: 10px;
+
+   font-size: 16px;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
+}
+
+/* --- Cocial-list --- */
+
+.social-box {
+   margin-top: 16px;
+}
+.social-list {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.social-list .item + .item {
+   margin-left: 10px;
+}
+
+.soc-link {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 44px;
+   height: 44px;
+
+   border-radius: 50%;
+
+   color: var(--svg-prime-color);
+   /* outline: 1px solid tomato; */
+}
+
+.soc-ico {
+   width: 20px;
+   height: 20px;
+
+   /* --- color наследует от ссылки --- */
+   fill: currentColor;
+}
+
+/* ----- при HOVER на ссылку ----- */
+/* ----- иконка тоже меняет цвет ----- */
+.social-list .soc-link:hover {
+   color: var(--white-text-color);
+   background-color: var(--accent-color);
+}
+
+/* ----------- */
+
+/* ===== CLIENT ===== */
+
+.client-list {
+   display: flex;
+   margin-top: 50px;
+}
+
+.client-list .item {
+   display: inline-flex;
+   flex-basis: calc(100% / 6 - 30px);
+   margin-left: 30px;
+}
+.client-list .item:first-child {
+   margin-left: 0;
+}
+
+.client-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 170px;
+   height: 92px;
+
+   color: var(--svg-prime-color);
+   border: 1px solid var(--svg-prime-color);
+   border-radius: 4px;
+}
+
+.client-ico {
+   width: 106px;
+   height: 60px;
+
+   fill: currentColor;
+}
+
+.client-link:hover,
+.client-link:focus {
+   color: var(--accent-color);
+   border-color: var(--accent-color);
+   outline-color: var(--accent-color);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background-color: var(--dark-bg-color);
+}
+
+.footer-box {
+   display: flex;
+   align-items: baseline;
+}
+
+/* ----- Logo ----- */
+.part-light {
+   color: var(--white-text-color);
+}
+/* ----- Address ----- */
+.address-footer {
+   margin-top: 20px;
+
+   font-style: normal;
+   font-style: inherit;
+}
+
+.address-list .item:not(:first-child) {
+   margin-top: 9px;
+}
+
+.footer-link.map {
+   color: var(--white-text-color);
+}
+.footer-link {
+   color: var(--footer-link-color);
+}
+
+.footer-link:hover,
+.footer-link:focus {
+   color: var(--accent-color);
+}
+
+/* ----- SOCIAL-footer ----- */
+.soc-footer-box {
+   margin-left: 70px;
+}
+
+.join {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 16px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+
+   color: var(--white-text-color);
+}
+
+.social-box-footer {
+   margin-top: 20px;
+}
+
+.social-list-dark .soc-link {
+   color: var(--white-text-color);
+
+   background-color: var(--footer-link-bg);
+}
+
+/* ----- при HOVER на ссылку ----- */
+/* ----- иконка тоже меняет цвет ----- */
+
+/* -----------------------------------------------   */
+
+/* ===== PORTFOLIO ===== */
+
+/* -===== filter ===== */
+.filter {
+   display: flex;
+   justify-content: center;
+}
+
+.filter .item:not(:first-child) {
+   margin-left: 8px;
+}
+
+.filter-btn {
+   padding: 6px 22px;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 1.63;
+   /* identical to box height, or 162% */
+
+   text-align: center;
+   letter-spacing: 0.03em;
+
+   color: #212121;
+   background-color: var(--second-bg-color);
+}
+.filter-btn.active {
+   color: var(--white-text-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+   color: var(--white-text-color);
+   background-color: var(--accent-color);
+   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* --=== Examples ===-- */
+
+.examples-list {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 50px;
+
+   margin-top: 20px;
+   margin-left: -30px;
+}
+
+.examples-list .item {
+   flex-basis: calc(100% / 3 - 30px);
+   margin-top: 30px;
+   margin-left: 30px;
+}
+
+.examples-list .item:hover {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-descr {
+   padding: 20px 24px;
+
+   border: 1px solid #eeeeee;
+   border-top: none;
+}
+
+.examples-title {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 2;
+   letter-spacing: 0.06em;
+}
+.examples-text {
+   margin-top: 4px;
+
+   font-size: 16px;
+   line-height: 1.88;
+
+   color: var(--prime-text-color);
+}
