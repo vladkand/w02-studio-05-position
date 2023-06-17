@@ -1,0 +1,1 @@
+refs.backdrop.addEventListener("click", logBackdropClick);

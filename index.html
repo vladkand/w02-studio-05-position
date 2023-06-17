@@ -76,7 +76,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
          </h1>
-         <button class="hero-btn btn" type="button">Замовити послугу</button>
+         <button class="hero-btn btn" data-modal-open type="button">Замовити послугу</button>
       </section>
 
       <!--== FEATURE- one ==-->
@@ -159,13 +159,24 @@
             <h2 class="section-title title">Чим ми займаємося</h2>
             <ul class="work-list list">
                <li class="work-list-item">
-                  <img src="./images/work01.jpg" alt="людина набирає текст на клавіатурі" width="370" />
+                  <div class="work-thumb"><img src="./images/work01.jpg" alt="людина набирає текст на клавіатурі"
+                        width="370" />
+                     <p class="work-text">Десктопні додатки</p>
+                  </div>
                </li>
+
                <li class="work-list-item">
-                  <img src="./images/work02.jpg" width="370" alt="людина зі смартфоном перед ноутбуком" />
+                  <div class="work-thumb"><img src="./images/work02.jpg" width="370"
+                        alt="людина зі смартфоном перед ноутбуком" />
+                     <p class="work-text">Мобільні додатки</p>
+                  </div>
                </li>
+
                <li class="work-list-item">
-                  <img src="./images/work03.jpg" alt="рука людини з колориметром для монітора" width="370" />
+                  <div class="work-thumb"><img src="./images/work03.jpg" alt="рука людини з колориметром для монітора"
+                        width="370" />
+                     <p class="work-text">Дизайнерські рішення</p>
+                  </div>
                </li>
             </ul>
          </div>
@@ -447,7 +458,7 @@
                   <li class="item">
                      <a href="" class="soc-link insta-link link">
                         <svg class="soc-ico">
-                           <use href="./images/symbol-.svg#instagram"></use>
+                           <use href="./images/symbol.svg#instagram"></use>
                         </svg>
                      </a>
                   </li>
@@ -455,7 +466,7 @@
                   <li class="item">
                      <a href="" class="soc-link twit-link link">
                         <svg class="soc-ico">
-                           <use href="./images/symbol-.svg#twitter"></use>
+                           <use href="./images/symbol.svg#twitter"></use>
                         </svg>
                      </a>
                   </li>
@@ -463,7 +474,7 @@
                   <li class="item">
                      <a href="" class="soc-link fb-link link">
                         <svg class="soc-ico">
-                           <use href="./images/symbol-.svg#facebook"></use>
+                           <use href="./images/symbol.svg#facebook"></use>
                         </svg>
                      </a>
                   </li>
@@ -471,7 +482,7 @@
                   <li class="item">
                      <a href="" class="soc-link in-link link">
                         <svg class="soc-ico">
-                           <use href="./images/symbol-.svg#linkedin"></use>
+                           <use href="./images/symbol.svg#linkedin"></use>
                         </svg>
                      </a>
                   </li>
@@ -480,6 +491,20 @@
          </div>
       </div>
    </footer>
+
+   <!-- ===== BACKDROP-MODAL ===== -->
+   <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+         <button class="close btn" data-modal-close>
+            <svg class="close-ico" width="11" height="11">
+               <use href="./images/symbol.svg#close"></use>
+            </svg>
+         </button>
+      </div>
+   </div>
+
+   <!--  -->
+   <script src="./js/modal.js"></script>
 </body>
 
 </html>
