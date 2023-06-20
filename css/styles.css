@@ -613,10 +613,59 @@ img {
    margin-left: 30px;
 }
 
-.examples-list .item:hover {
+.examples-link {
+   display: block;
+}
+
+.example-thumb {
+   position: relative;
+}
+
+.example-promo {
+   position: absolute;
+   top: 0;
+   left: 0;
+   opacity: 0;
+
+   width: 100%;
+   height: 294px;
+   padding: 63px 24px;
+
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.56;
+
+   color: var(--white-text-color);
+   letter-spacing: 0.03em;
+   background-color: tomato;
+}
+
+.examples-link:hover {
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.examples-link:hover .example-promo {
+   opacity: 1;
+}
+
+/* ----- BEFORE ----- */
+.before-thumb {
+   position: relative;
+}
+
+.before-thumb::before {
+   display: block;
+   position: absolute;
+
+   content: '';
+
+   width: 100%;
+   height: 100%;
+
+   background-color: rgba(0, 128, 128, 0.589);
+}
+/*  */
 
 .card-descr {
    padding: 20px 24px;
