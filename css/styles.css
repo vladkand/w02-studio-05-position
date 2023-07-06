@@ -323,7 +323,7 @@ img {
 }
 /* --------- */
 
-/* --Work-- */
+/* ----- Work ----- */
 .work-list {
    display: flex;
    margin-top: 50px;
@@ -353,7 +353,7 @@ img {
 }
 /* -------- */
 
-/* --Team-- */
+/* ----- Team ----- */
 .team {
    background-color: var(--second-bg-color);
 }
@@ -377,8 +377,6 @@ img {
 
    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
       0px 2px 1px rgb(0 0 0 / 20%);
-
-   /* box-shadow: 0px 1px 3px 0px #0000001f; */
 }
 
 .member-dscr {
@@ -391,6 +389,7 @@ img {
    font-size: 16px;
    line-height: 1.19;
 }
+
 .team-text {
    margin-top: 10px;
 
@@ -399,7 +398,7 @@ img {
    letter-spacing: 0.03em;
 }
 
-/* --- Cocial-list --- */
+/* ----- Cocial-list ----- */
 
 .social-box {
    margin-top: 16px;
@@ -437,7 +436,8 @@ img {
 
 /* ----- при HOVER на ссылку ----- */
 /* ----- иконка тоже меняет цвет ----- */
-.social-list .soc-link:hover {
+.social-list .soc-link:hover,
+.social-list .soc-link:focus {
    color: var(--white-text-color);
    background-color: var(--accent-color);
 }
@@ -619,25 +619,30 @@ img {
 
 .example-thumb {
    position: relative;
+   overflow: hidden;
 }
 
 .example-promo {
    position: absolute;
    top: 0;
    left: 0;
-   opacity: 0;
 
    width: 100%;
    height: 294px;
    padding: 63px 24px;
 
-   font-weight: 400;
    font-size: 18px;
    line-height: 1.56;
 
    color: var(--white-text-color);
    letter-spacing: 0.03em;
-   background-color: tomato;
+   /* background-color: rgba(255, 99, 71, 0.89); */
+   background-color: rgba(33, 150, 243, 0.9);
+
+   /* opacity: 0; */
+
+   transform: translateY(101%);
+   transition: transform 250ms linear, opacity 500ms linear;
 }
 
 .examples-link:hover {
@@ -647,6 +652,8 @@ img {
 
 .examples-link:hover .example-promo {
    opacity: 1;
+
+   transform: translateY(0);
 }
 
 /* ----- BEFORE ----- */
