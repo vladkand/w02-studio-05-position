@@ -46,12 +46,21 @@
          <!--== CONTACT ==-->
          <ul class="contaсt-list list">
             <li class="item">
-               <a class="mail-link link" href="mailto:info@devstudio.com">
+               <a class="contact-link link" href="mailto:info@devstudio.com">
+                  <svg class="contact-ico" width="16" height="12">
+                     <use href="./images/symbol.svg#mail"></use>
+                  </svg>
+
                   info@devstudio.com
                </a>
             </li>
             <li class="item">
-               <a class="header-tel-link link" href="tel:+380961111111">
+               <a class="contact-link link" href="tel:+380961111111">
+
+                  <svg class="contact-ico" width="12" height="16">
+                     <use href="./images/symbol.svg#phone"></use>
+                  </svg>
+
                   +38 096 111 11 11
                </a>
             </li>
@@ -68,6 +77,8 @@
       <section class="section portfolio">
          <div class="container">
             <h1 class="visually-hidden">Портфоліо</h1>
+
+            <!-- === PART BTN-FILTERS === -->
             <ul class="filter list">
                <li class="item">
                   <button class="filter-btn btn active" type="button">
@@ -103,6 +114,8 @@
             <!-- ==== EXAMPLES ==== -->
             <ul class="examples-list list">
                <li class="item">
+
+                  <!-- === Технокряк === -->
                   <a class="examples-link link" href="">
                      <div class="example-thumb">
                         <img src="./images/exampl-01.jpg" width="370"
@@ -119,13 +132,24 @@
                   </a>
                </li>
 
-               <li class="item">
-                  <a class="examples-link link" href="/">
-                     <div class="before-thumb">
-                        <img src="./images/exampl-02.jpg" width="370" alt="два баскетболісти з м'ячем" />
+               <li class="item ">
+                  <!-- === NEW-ORLEAN === -->
+
+                  <!--  ROTATE #d -->
+                  <a class="examples-link link scene" href="">
+
+                     <div class="flip">
+
+                        <div class="flip__item flip--front">
+                           <img src="./images/exampl-02.jpg" width="370" alt="два баскетболісти з м'ячем" />
+                        </div>
+
+                        <div class="flip__item flip--back">
+                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                           сервісів. Все це дозволить відвідувачу отримати
+                           вичерпні відомості про компанію чи приватну особу.
+                        </div>
                      </div>
-
-
 
                      <div class="card-descr">
                         <h3 class="examples-title title">
@@ -134,21 +158,44 @@
                         </h3>
                         <p class="examples-text">Дизайн</p>
                      </div>
+
                   </a>
                </li>
 
-               <li class="item">
-                  <a class="examples-link link" href="/">
-                     <div class="example-thumb"></div>
+               <li class="item scene">
 
-                     <img src="./images/exampl-03.jpg" width="370" alt="стилізоване зображення риби з написом" />
+                  <!-- Seafood -->
+                  <!--   === FLIP-ALL === -->
+                  <a class="examples-link link nflip" href="/">
 
-                     <div class="card-descr">
-                        <h3 class="examples-title title">
-                           Ресторан <span lang="en">Seafood</span>
-                        </h3>
-                        <p class="examples-text">Додаток</p>
+                     <div class="thumb nflip__item flip--front"><img src="./images/exampl-03.jpg" width="370"
+                           alt="стилізоване зображення риби з написом" />
+                        <div class="card-descr">
+                           <h3 class="examples-title title">
+                              Ресторан <span lang="en">Seafood</span>
+                           </h3>
+                           <p class="examples-text">Додаток</p>
+                        </div>
                      </div>
+                     <div class="nflip__item nflip--back">
+                        <p>
+                           Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та
+                           сервісів. Все це дозволить відвідувачу отримати
+                           вичерпні відомості про компанію чи приватну особу.
+                        </p>
+
+                     </div>
+
+                     <div class="tmp">
+
+
+
+                     </div>
+
+
+
+
+
                   </a>
                </li>
 

@@ -178,7 +178,7 @@ img {
    margin-left: 50px;
 }
 
-.contaсt-list .link {
+.contact-link {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -188,11 +188,13 @@ img {
    letter-spacing: 0.02em;
 
    color: inherit;
-
-   /* color: tomato; */
 }
 
-.contact-list-ico {
+.link {
+   transition: color 1200ms linear;
+}
+
+.contact-ico {
    margin-right: 10px;
 
    fill: currentColor;
@@ -200,6 +202,7 @@ img {
 
 .contaсt-list .link:hover,
 .contaсt-list .link:focus {
+   fill: currentColor;
    color: var(--accent-color);
 }
 /* ---------------   */
@@ -636,7 +639,7 @@ img {
 
    color: var(--white-text-color);
    letter-spacing: 0.03em;
-   /* background-color: rgba(255, 99, 71, 0.89); */
+
    background-color: rgba(33, 150, 243, 0.9);
 
    /* opacity: 0; */
@@ -656,23 +659,106 @@ img {
    transform: translateY(0);
 }
 
-/* ----- BEFORE ----- */
-.before-thumb {
-   position: relative;
+/* === FLIP === */
+.scene {
+   perspective: 700px;
 }
 
-.before-thumb::before {
-   display: block;
+.flip {
+   position: relative;
+   width: 100%;
+   height: 294px;
+
+   transform-style: preserve-3d;
+
+   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flip__item {
    position: absolute;
-
-   content: '';
-
    width: 100%;
    height: 100%;
 
-   background-color: rgba(0, 128, 128, 0.589);
+   backface-visibility: hidden;
 }
-/*  */
+
+.flip--back {
+   color: var(--white-text-color);
+   background-color: var(--accent-color);
+
+   padding: 63px 24px;
+
+   font-size: 18px;
+   line-height: 1.56;
+
+   color: var(--white-text-color);
+   letter-spacing: 0.03em;
+
+   transform: rotateY(180deg);
+}
+
+.scene:hover .flip,
+.scene:active .flip,
+.scene:focus .flip {
+   transform: rotateY(180deg);
+}
+
+/* ========== */
+
+.nflip {
+   position: relative;
+   width: 100%;
+   height: 100%;
+
+   transform-style: preserve-3d;
+
+   transition: transform 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nflip__item {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+
+   backface-visibility: hidden;
+}
+
+.nflip--back {
+   display: flex;
+   justify-content: center;
+   /* align-items: center; */
+   padding: 63px 24px;
+
+   font-size: 18px;
+   line-height: 1.56;
+
+   color: var(--white-text-color);
+   background-color: var(--accent-color);
+
+   color: var(--white-text-color);
+   letter-spacing: 0.03em;
+
+   transform: rotateY(180deg);
+}
+
+.nflip--back p {
+   flex-grow: 1;
+}
+
+.scene:hover .nflip {
+   transform: rotateY(180deg);
+
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* 
+.item.scene {
+   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+} */
+
+/* ==== */
 
 .card-descr {
    padding: 20px 24px;
@@ -695,7 +781,6 @@ img {
 
    color: var(--prime-text-color);
 }
-/* ========== */
 
 /* ===== BACKDROP--MODAL ===== */
 .backdrop {
