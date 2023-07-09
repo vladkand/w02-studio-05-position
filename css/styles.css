@@ -149,10 +149,6 @@ img {
 }
 
 .nav-link {
-   /* display: inline-block;
-   padding-top: 32px;
-   padding-bottom: 32px; */
-
    font-weight: 500;
    line-height: 1.14;
    letter-spacing: 0.02em;
@@ -160,8 +156,6 @@ img {
    color: var(--second-text-color);
 }
 .nav-link.current {
-
-  
    color: var(--accent-color);
 }
 
@@ -207,8 +201,7 @@ img {
    fill: currentColor;
    /* color: var(--accent-color); */
 
-      color: tomato;
-
+   color: tomato;
 }
 /* ---------------   */
 
