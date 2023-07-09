@@ -160,6 +160,8 @@ img {
    color: var(--second-text-color);
 }
 .nav-link.current {
+
+  
    color: var(--accent-color);
 }
 
@@ -191,7 +193,7 @@ img {
 }
 
 .link {
-   transition: color 1200ms linear;
+   transition: color 500ms linear;
 }
 
 .contact-ico {
@@ -203,7 +205,10 @@ img {
 .contaсt-list .link:hover,
 .contaсt-list .link:focus {
    fill: currentColor;
-   color: var(--accent-color);
+   /* color: var(--accent-color); */
+
+      color: tomato;
+
 }
 /* ---------------   */
 
