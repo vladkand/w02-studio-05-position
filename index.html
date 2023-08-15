@@ -609,42 +609,47 @@
                </svg>
             </button>
             <form action="#" class="modal-form">
-               <strong class="modal-title">
+               <strong class="modal-title title">
                   Залиште свої дані, ми вам передзвонимо
                </strong>
 
                <!-- name -->
                <div class="form-field">
                   <label for="name" class="form-label">Ім'я</label>
-                  <input type="text" name="name" id="name" />
+                  <input class="form-input" type="text" name="name" id="name" />
                </div>
 
                <!-- Tel -->
                <div class="form-field">
                   <label for="tel" class="form-label">Телефон</label>
-                  <input type="tel" name="tel" id="tel" />
+                  <input class="form-input" type="tel" name="tel" id="tel" />
                </div>
 
                <!-- MAil -->
                <div class="form-field">
                   <label for="email" class="form-label">Пошта</label>
-                  <input type="email" name="email" id="email" />
+                  <input
+                     class="form-input"
+                     type="email"
+                     name="email"
+                     id="email"
+                  />
                </div>
 
                <!-- Comment -->
                <div class="form-field">
                   <label for="comment" class="form-label">Коментар</label>
                   <textarea
-                     class="form-input"
+                     class="form-input form-comment"
                      name="comment"
                      id="comment"
                      rows="5"
-                     placeholder="input text!"
+                     placeholder="Введіть текст"
                   ></textarea>
                </div>
 
                <!-- Chek-field -->
-               <div class="form-field check-box">
+               <div class="form-check-box">
                   <input type="checkbox" name="agree" id="agree" />
                   <label for="agree" class="form-check">
                      Погоджуюся з розсилкою та приймаю
