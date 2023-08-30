@@ -606,13 +606,13 @@
       <div class="backdrop" data-modal>
          <!-- ===== MODAL ===== -->
          <div class="modal">
-            <button class="close btn" data-modal-close>
+            <button class="close-btn" data-modal-close>
                <svg class="close-ico" width="11" height="11">
                   <use href="./images/symbol.svg#close"></use>
                </svg>
             </button>
             <form action="#" class="modal-form" autocomplete="off">
-               <strong class="modal-title title">
+               <strong class="form-title title">
                   Залиште свої дані, ми вам передзвонимо
                </strong>
 
@@ -672,38 +672,46 @@
 
                <!-- ============== Comment ============ -->
                <div class="form-field">
-                  <label for="comment" class="form-label">Коментар</label>
                   <textarea
                      class="form-input form-comment"
                      name="comment"
                      id="comment"
                      rows="5"
-                     placeholder="Введіть текст"
+                     placeholder=" "
                   ></textarea>
+
+                  <label for="comment" class="form-label-comment"
+                     >Введіть текст</label
+                  >
                </div>
 
-               <!-- Chek-field -->
-               <div class="form-check-box">
-                  <input type="checkbox" name="agree" id="agree" />
-                  <label for="agree" class="form-check">
-                     Погоджуюся з розсилкою та приймаю
-                     <span> <a class="link" href="#">Умови договору</a></span>
-                  </label>
-               </div>
-
-               <!-- ===== TEST-LABEL ===== -->
-               <!-- <div class="form-field">
-                  <label for="email" class="dop-form-label">
+               <!-- ======== Chek-field ============ -->
+               <div class="form-check">
+                  <label for="agree" class="form-check-label">
                      <input
-                        class="form-input"
-                        type="email"
-                        name="email"
-                        id="email"
+                        type="checkbox"
+                        name="agree"
+                        id="agree"
+                        class="check-box-std visually-hidden"
                      />
-                     <span class="label-txt">Пошта</span>
+                     <span class="icon-check">
+                        <svg class="" width="16" height="15">
+                           <use
+                              href="./images/icons-sec-vsc.svg#form-agree"
+                           ></use>
+                        </svg>
+                     </span>
+
+                     <span class="agree"
+                        >Погоджуюся з розсилкою та приймаю&nbsp<a
+                           class="check-link link"
+                           href="#"
+                           >Умови договору</a
+                        ></span
+                     >
                   </label>
-               </div> -->
-               <!-- ======================== -->
+               </div>
+               <button class="btn form-btn" type="submit">Відправити</button>
             </form>
          </div>
       </div>
