@@ -600,7 +600,10 @@
       </footer>
 
       <!-- ===== BACKDROP-MODAL ===== -->
-      <div class="backdrop is-hidden" data-modal>
+
+      <!-- <div class="backdrop is-hidden" data-modal> -->
+
+      <div class="backdrop" data-modal>
          <!-- ===== MODAL ===== -->
          <div class="modal">
             <button class="close btn" data-modal-close>
@@ -608,35 +611,66 @@
                   <use href="./images/symbol.svg#close"></use>
                </svg>
             </button>
-            <form action="#" class="modal-form">
+            <form action="#" class="modal-form" autocomplete="off">
                <strong class="modal-title title">
                   Залиште свої дані, ми вам передзвонимо
                </strong>
 
-               <!-- name -->
+               <!-- ===== name ====== -->
                <div class="form-field">
-                  <label for="name" class="form-label">Ім'я</label>
-                  <input class="form-input" type="text" name="name" id="name" />
+                  <label class="">
+                     <!-- <span class="pix"></span> -->
+                     <input
+                        class="form-input"
+                        type="text"
+                        name="name"
+                        placeholder=" "
+                     />
+                     <svg class="form-icon" width="18" height="18">
+                        <use
+                           href="./images/icons-sec-vsc.svg#form-person"
+                        ></use>
+                     </svg>
+
+                     <span class="form-label label-txt">Ім'я</span>
+                  </label>
                </div>
 
-               <!-- Tel -->
+               <!-- ===== Tel ====== -->
                <div class="form-field">
-                  <label for="tel" class="form-label">Телефон</label>
-                  <input class="form-input" type="tel" name="tel" id="tel" />
+                  <label class="label">
+                     <!-- <span class="pix"></span> -->
+                     <input
+                        class="form-input"
+                        type="tel"
+                        name="tel"
+                        placeholder=" "
+                     />
+                     <svg class="form-icon" width="18" height="18">
+                        <use href="./images/icons-sec-vsc.svg#form-phone"></use>
+                     </svg>
+                     <span class="form-label">Телефон</span>
+                  </label>
                </div>
 
-               <!-- MAil -->
+               <!-- ===== MAil ===== -->
                <div class="form-field">
-                  <label for="email" class="form-label">Пошта</label>
-                  <input
-                     class="form-input"
-                     type="email"
-                     name="email"
-                     id="email"
-                  />
+                  <label class="">
+                     <!-- <span class="pix"></span> -->
+                     <input
+                        class="form-input"
+                        type="email"
+                        name="email"
+                        placeholder=" "
+                     />
+                     <svg class="form-icon" width="18" height="18">
+                        <use href="./images/icons-sec-vsc.svg#form-email"></use>
+                     </svg>
+                     <span class="form-label label-txt">Пошта</span>
+                  </label>
                </div>
 
-               <!-- Comment -->
+               <!-- ============== Comment ============ -->
                <div class="form-field">
                   <label for="comment" class="form-label">Коментар</label>
                   <textarea
@@ -656,6 +690,20 @@
                      <span> <a class="link" href="#">Умови договору</a></span>
                   </label>
                </div>
+
+               <!-- ===== TEST-LABEL ===== -->
+               <!-- <div class="form-field">
+                  <label for="email" class="dop-form-label">
+                     <input
+                        class="form-input"
+                        type="email"
+                        name="email"
+                        id="email"
+                     />
+                     <span class="label-txt">Пошта</span>
+                  </label>
+               </div> -->
+               <!-- ======================== -->
             </form>
          </div>
       </div>
