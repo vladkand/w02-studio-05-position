@@ -516,9 +516,9 @@
 
       <!-- FOOTER -->
       <footer class="footer">
-         <div class="container footer-box">
+         <div class="container footer-wrapper">
             <!-- =====  ===== -->
-            <div class="logo-address-box">
+            <div class="logo-address-box footer-box">
                <a class="logo logo-footer link" href="#top">
                   Web<span class="part-light">Studio</span>
                </a>
@@ -552,13 +552,11 @@
                      </li>
                   </ul>
                </address>
-
-               <!-- address-fin -->
             </div>
 
             <!-- ===== SOCIAL-footer ===== -->
-            <div class="soc-footer-box">
-               <strong class="join">приєднуйтесь</strong>
+            <div class="soc-footer-box footer-box">
+               <strong class="join footer-title">приєднуйтесь</strong>
 
                <div class="social-box-footer">
                   <ul class="soc-list social-list-dark list">
@@ -596,14 +594,38 @@
                   </ul>
                </div>
             </div>
+
+            <!-- ===== subscribe-Footer ===== -->
+            <div class="subscribe-footer-box footer-box">
+               <strong class="footer-title subscribe-title"
+                  >Підпишіться на розсилку</strong
+               >
+               <form action="#" class="form-footer">
+                  <label for=""></label>
+                  <input
+                     class="subscribe-input"
+                     type="email"
+                     name=""
+                     placeholder="E-mail"
+                  />
+
+                  <button class="subscribe-btn btn" type="submit">
+                     Підписатися
+                     <span class="btn-icon">
+                        <svg class="close-ico" width="24" height="24">
+                           <use href="./images/symbol.svg#close"></use>
+                        </svg>
+                     </span>
+                  </button>
+               </form>
+            </div>
          </div>
       </footer>
 
       <!-- ===== BACKDROP-MODAL ===== -->
 
-      <!-- <div class="backdrop is-hidden" data-modal> -->
-
-      <div class="backdrop" data-modal>
+      <div class="backdrop is-hidden" data-modal>
+         <!-- <div class="backdrop" data-modal> -->
          <!-- ===== MODAL ===== -->
          <div class="modal">
             <button class="close-btn" data-modal-close>
