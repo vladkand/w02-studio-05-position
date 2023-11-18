@@ -541,6 +541,8 @@
    color: #212121;
    background-color: var(--second-bg-color);
 
+   box-shadow: none;
+
    transition: 250ms var(--cubic-function);
 }
 .filter-btn.active {
